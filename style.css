@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: url(/img/banner.jpg);
+    overflow-y: hidden;
+}
+
+.autentication {
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: #ffffff;
+    font-size: 1.5em;
+}
+
+
+.autentication .login {
+    background-color: #fff;
+    border: solid 1px #9c9c9c;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    border-radius: 10px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.login input {
+    padding-left: 10px;
+    width:90%;
+    height: 100%;
+    opacity: 1;
+}
+
+.login input:focus {
+    outline: none;
+}
+
+.autentication input,
+.autentication button {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    border: none;
+}
+
+.autentication button {
+    height: 55px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #532056;
+    transition: ease .3s;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.autentication button:hover {
+    background-color: #26b6b2;
+}
+
+.content {
+    color: #542057;
+    background-color: #ffffff;
+    position: absolute;
+    top: 15%;
+    margin: 0 40px;
+    font-size: 1.5em;
+}
+
+.circle img {
+    width: 100%;
+}
+
+.circle {
+    background-color: #fff;
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    top: 40%;
+    left: -10%;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    top: 90%;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+footer p {
+    padding: 30px;
+}
+
+@media (max-width: 1550px) {
+    .autentication {
+        height: 300px;
+        width: 400px;
+        left: 55%;
+    }
+    
+    .content {
+        font-size: 1.2em;
+    }
+    
+    .circle {
+        height: 700px;
+        width: 700px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .circle {
+        display: none;
+        left: 0;
+    }
+
+    .autentication {
+        position: inherit;
+    }
+
+    .autentication,
+    .content {
+        background-color: rgba(255, 255, 255, .8);
+    }
+    
+    .content {
+        align-self: center;
+    }
+    
+    .form-wrapper {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header {
+        justify-content: center;
+        display: flex;
+    }
+    
+    footer {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1100px) {
+    body {
+        background: url(img/mobile_banner2.jpg);
+    }
+}
+
+@media (max-width: 790px) {
+    body {
+        background: url(img/mobile_banner.jpg);
+    }
+}
+
+@media (max-width: 550px) {
+    .content {
+        font-size: 1em;
+    }
+
+    .autentication {
+        height: 200px;
+        width: 60%;
+    }
+
+    .autentication input,
+    .autentication button {
+        margin: 10px 0;
+    }
+    
+    .autentication {
+        font-size: .8rem;
+    }
+
+}
+
+@media (max-width: 790px) {
+    .content {
+        top: 5%;
+    }
+}
